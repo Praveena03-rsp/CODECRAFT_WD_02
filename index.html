@@ -4,32 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
-    <link rel="preconnect" href="">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assests/img/favicon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="assests/style.css"> 
-    <script src="assests/script.js" defer></script>       
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="watch">
-            <div class="outer-circle">
-                <div class="inner-circle">
-                    <span class="minutes">00  :</span> 
-                    <span class="seconds">00  :</span>
-                    <span class="milliseconds">00   :</span>
-                </div>
+        <div class="left">
+            <div class="stopwatch">
+                <div id="display">00:00:00</div>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+                <button id="lap">Lap</button>
             </div>
         </div>
+        <div class="right">
+            <ul id="laps"></ul>
+        </div>
     </div>
-    <div class="buttons">  
-        <button class="resetbtn button visibility">Reset</button>
-        <button class="playbtn button">Play</button>
-        <button class="lapbtn button visibility">Lap</button>
-        
-    </div>
-    <ul class="laps"></ul>
-    <button class="clearbtn button visibility">Clear Laps</button>
+    <script src="script.js"></script>
 </body>
 </html>
